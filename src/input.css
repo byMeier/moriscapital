@@ -1,3 +1,132 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* // <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 100 to 900 */
+
+/* .league-spartan {
+  font-family: "League Spartan"; sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+} */
+
+.header{
+    width: 100%;
+    position: fixed;
+}
+
+/* .header.blur {
+    transition: .2s;
+    background-color: rgba(29, 29, 27, 0.4);
+    backdrop-filter: blur(15px);
+} */
+
+.nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo{
+    display: flex;
+    align-self: flex-start;
+    width: 19rem;
+    height: 100%;
+}
+
+.nav-list{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.75rem;
+    margin: 1rem;
+    padding-right: 4rem;
+}
+
+.nav-button {
+    display: block;
+    width: 6rem;
+    text-decoration: none;
+    color: #ffffffc2;
+    text-align: center;
+}
+
+#button-xl{
+    width: 9rem;
+}
+
+#button-xl2{
+    width: 6.5rem;
+}
+
+.nav .nav-list .li .nav-button,
+.nav .nav-list .li .nav-button:after,
+.nav .nav-list .li .nav-button:before {
+    transition: all .5s;
+}
+
+.nav .nav-list .li .nav-button:hover {
+    color: #FFFFFF;
+}
+
+.nav .nav-list .li .nav-button {
+    position: relative;
+}
+
+.nav .nav-list .li .nav-button:after {
+    position: absolute;
+    bottom: 1;
+    left: 0;
+    right: 1;
+    margin: auto;
+    width: 2px;
+    content: '.';
+    color: transparent;
+    background: #dfdfdf00;
+    height: 0%;
+}
+
+.nav .nav-list .li .nav-button:hover:after {
+    background: #ED3237;
+    height: 100%;
+}
+
+.contacto{
+    width: 10%;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.70rem;
+    transition: .7s;
+    background: linear-gradient(120deg, var(--c1, #ffffff00), var(--c2, #ffffff) 90%, var(--c1, #ffffff)) var(--x, 0)/ 200%;
+    background-size: 300% 100%;
+    border-radius: 20px;
+    margin: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+.contacto:hover{
+    --x: 100%;
+    color: #011550;
+    transition: .5s;
+}
+
+.main{
+    background-image: url('./img/fondo.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%; 
+    height: 100vh;
+    color: white;
+}

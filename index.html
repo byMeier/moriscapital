@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <link href="./src/output.css" rel="stylesheet">
+    <link href="./src/input.css" rel="stylesheet">
     <title>Moris Capital Investments</title>
 </head>
 
-<body>
+<body class="bg-gradient-to-r from-[#E4CDCD] via-white to-[#BBCBDC]">
     
     <!-- HEADER -->
-    <header class="header">
-            <nav>
-                <img src="./src/img/logo.png" alt="Moris Capital Investments"/>
-                <ul>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#como">Cómo Funciona</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#seguridad">Seguridad</a></li>
+    <header class="header" id="header">
+            <nav class="nav" id="nav">
+                <img class="logo" src="./src/img/logo.png" alt="Moris Capital Investments"/>
+                <ul class="nav-list">
+                    <li class="li"><a class="nav-button" href="#servicios">Servicios</a></li>
+                    <li class="li"><a class="nav-button" id="button-xl" href="#como">Cómo Funciona</a></li>
+                    <li class="li"><a class="nav-button" href="#nosotros">Nosotros</a></li>
+                    <li class="li"><a class="nav-button" id="button-xl2" href="#seguridad">Seguridad</a></li>
                 </ul>
                 <a class="contacto" href="">Contáctanos</a>
             </nav>
@@ -25,7 +29,7 @@
 
     <!-- PÁGINA PRINCIPAL -->
     <section class="main">
-        <div>
+        <div class="pt-96">
             <h1>Tu inversión<br>en tu control.</h1>
             <h2>Decide, invierte y gana sin dedicar tiempo.</h2>
             <a class="contacto" href="">Empieza Ahora</a>
@@ -256,6 +260,8 @@
         </div>
         <p>Copyright Ⓡ Moris Capital Investments 2024. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="./src/main.js"></script>
 
 </body>
 
