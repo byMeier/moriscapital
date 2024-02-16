@@ -19,6 +19,7 @@ html{
     height: 80px;
     position: fixed;
     background-color: #01155069;
+    z-index: 1000;
 }
 
 .nav{
@@ -283,12 +284,23 @@ html{
 } */
 
 @media (min-width: 395px){
-    .phone{
+    .phone, .coins1-mobile, .coins2-mobile{
         display: none;
     }
 }
 
 @media (min-width: 230px){
+
+    /* MAIN SECTION */
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 750px;
+        justify-content: space-between;
+    }
+
     .main-text{
         width: 100%;
         height: 350px;
@@ -308,6 +320,34 @@ html{
         color: #E45C60;
     }
 
+    .main-img{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .coins1-mobile{
+        width: 40%;
+        z-index: 5;
+        transform: translate(0, -1.5rem);
+        position: absolute;
+    }
+
+    .coins2-mobile{
+        width: 40%;
+        z-index: 15;
+        transform: translate(0, -1.5rem);
+        position: absolute;
+        margin-left: 60vw;
+    }
+
+    .phone{
+        width: 80%;
+        margin: auto;
+        padding-top: 2rem;
+        z-index: 10;
+    }
+
     .h2main{
         font-size: 1.5rem;
         font-weight: 400;
@@ -315,23 +355,174 @@ html{
         color: #FFF;
     }
 
-    .main-img{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+    /* SERVICIOS SECTION */
+
+    .h1serv{
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+        line-height: 42px;
+    }
+    .h1serv.sky{
+        color: #1369C0;
+    }
+    .h1serv.darkblue{
+        color: #173552;
     }
 
-    .phone{
-        width: 80%;
+    .glassmorphism{
+        width: 80vw;
+        padding: 1.5rem;
+        border-radius: 20px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.300), rgb(224, 224, 224, 0.300));
+        z-index: 1;
+        position: relative;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        z-index: 5;
         margin: auto;
-        padding-top: 2rem;
+        margin-top: 1.5rem;
     }
 
-    .main{
+    .glassmorphism-shadow{
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        border-radius: 20px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.300), rgb(224, 224, 224, 0.300));
+        z-index: 10;
+        position: relative;
+        box-shadow:1px 1px 10px #00000025;
+        margin-top: -1rem;  
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    /* BENEFICIOS */
+
+    .shadowing{
+        filter: drop-shadow(0 2px 5px #00000025)
+    }
+
+    .g1{
+        position: relative;
+        margin: 2rem;
+        z-index: 1;
+        margin-left: 0;
+    }
+
+    .g2{
+        position: absolute;
+        z-index: 2;
+        transform: translate(100px, -190px);
+    }
+
+    .beneficios{
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        height: 750px;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
     }
+
+    .h3{
+        text-align: justify;
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 20px;
+    }
+    .h3.sky{
+        color: #1369C0;
+    }
+    .h3.darkblue{
+        color: #173552;
+    }
+    .h3.red{
+        color: #E45C60;
+    }
+
+    .glassmorphism-blue{
+        padding: 1rem;
+        border-radius: 20px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.300), rgb(158, 209, 255, 0.300));
+        position: relative;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        max-width: 320px;
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .h2{
+        color: #173552;
+        font-size: 1.7rem;
+        font-weight: 600;
+        text-align: center;
+        line-height: 25px;
+    }
+    .h2.sky{
+        color: #1369C0;
+    }
+    .h2.darkblue{
+        color: #173552;
+    }
+    .h2.red{
+        color: #E45C60;
+    }
+
+    .p{
+        width: 80vw;
+        max-width: 300px;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+        margin: auto;
+    }
+
+    /* CÓMO FUNCIONA SECTION */
+
+    .p2{
+        max-width: 300px;
+        text-align: justify;
+        font-size: 1rem;
+        font-weight: 400;
+        margin: auto;
+    }
+
+    .como-img{
+        margin: auto;
+        width: 85vw;
+        margin-top: -1rem;
+    }
+
+    .h3como{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 550;
+        line-height: 25px;
+        color: #173552;
+    }
+    .h3como-div{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .coins-beneficios1{
+        width: 30%;
+        z-index: 15;
+        transform: translate(0, 12rem);
+        position: absolute;
+    }
+
+    .coins-beneficios2{
+        width: 30%;
+        z-index: 15;
+        transform: translate(0, 12rem);
+        margin-left: 70vw;
+        position: absolute;
+    }
+
 }
