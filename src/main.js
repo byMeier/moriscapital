@@ -1,8 +1,8 @@
 // // DECLARACIÓN DE VARIABLES
 
-// // let nav = document.querySelector("#nav");
+let nav = document.querySelector(".nav-list");
 // let header = document.querySelector("#header")
-// // let burguer = document.querySelector("#burguer")
+let burguer = document.querySelector("#burguer")
 // // let scrolldown = document.querySelector("#scroll-down")
 
 // // HEADER BLUR
@@ -25,3 +25,21 @@
 //     //     scrolldown.classList.remove("goodbye");
 //     // }
 // };
+
+// MENÚ HAMBURGUESA
+
+burguer.addEventListener("click", () => {
+    burguer.classList.toggle("active");
+    nav.classList.toggle("visible");
+});
+
+/* burger close */
+let navButtons = document.querySelectorAll(".nav-button, .contacto");
+
+navButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        burguer.classList.remove("active");
+        nav.classList.remove("visible");
+        header.classList.remove("mobile");
+    });
+});

@@ -2419,26 +2419,18 @@ video {
   forced-color-adjust: none;
 }
 
-/* // <uniquifier>: Use a uniquifier for the class name
-// <weight>: Use a value from 100 to 900 */
-
-/* .league-spartan {
-  font-family: "League Spartan"; sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-} */
-
-.header{
-  width: 100%;
-  position: fixed;
-}
-
 /* .header.blur {
     transition: .2s;
     background-color: rgba(29, 29, 27, 0.4);
     backdrop-filter: blur(15px);
 } */
+
+.header{
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  background-color: #01155069;
+}
 
 .nav{
   width: 100%;
@@ -2453,8 +2445,9 @@ video {
 .logo{
   display: flex;
   align-self: flex-start;
-  width: 19rem;
+  width: 15rem;
   height: 100%;
+  padding-left: 0.5rem  ;
 }
 
 .nav-list{
@@ -2468,7 +2461,6 @@ video {
   font-weight: 600;
   padding: 0.75rem;
   margin: 1rem;
-  padding-right: 4rem;
 }
 
 .nav-button {
@@ -2523,7 +2515,7 @@ video {
   width: 10%;
   text-decoration: none;
   color: #ffffff;
-  padding: 0.70rem;
+  padding: 10px;
   transition: .7s;
   background: linear-gradient(120deg, var(--c1, #ffffff00), var(--c2, #ffffff) 90%, var(--c1, #ffffff)) var(--x, 0)/ 200%;
   background-size: 300% 100%;
@@ -2540,13 +2532,162 @@ video {
   transition: .5s;
 }
 
+.contacto-mobile{
+  display: none;
+  pointer-events: none;
+}
+
 .main{
-  background-image: url('./img/fondo.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background: linear-gradient(135deg in, #021750, #0848EF);
   width: 100%;
   height: 100vh;
   color: white;
+}
+
+.box{
+  display: none;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px){
+  .nav-list.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: .5s;
+  }
+
+  .contacto-mobile{
+    display: block;
+    width: 10%;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    transition: .7s;
+    background: linear-gradient(120deg, var(--c1, #ffffff00), var(--c2, #ffffff) 90%, var(--c1, #ffffff)) var(--x, 0)/ 200%;
+    background-size: 300% 100%;
+    border-radius: 20px;
+    margin: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .box{
+    width: 40px;
+    height: 100%;
+    margin-top: 37.5px;
+    margin-right: 20px;
+  }
+
+  .contacto{
+    display: none;
+  }
+
+  .nav-list {
+    padding-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 2rem;
+    top: 80px;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(29, 29, 27, 0.970);
+    justify-content: start;
+    z-index: 30;
+  }
+
+  /* BURGUER */
+
+  .box{
+    display: block;
+  }
+
+  #burguer {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 40px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: '';
+    background: #FFF;
+  }
+
+  #burguer,
+#burguer:after,
+#burguer:before {
+    transition: all 200ms ease-in-out;
+    border-radius: 1px;
+    height: 3px;
+    width: 37px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: '';
+    background: #fff;
+  }
+
+  #burguer:before {
+    top: -10px;
+  }
+
+  #burguer:after {
+    bottom: -10px;
+  }
+
+  #burguer.active {
+    transition: 0;
+    background-color: transparent;
+  }
+
+  #burguer.active:before,
+#burguer.active:after {
+    top: 0;
+  }
+
+  #burguer.active:after {
+    transform: rotate(-45deg);
+  }
+
+  #burguer.active:before {
+    transform: rotate(45deg);
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 430px){
+}
+
+@media (min-width: 230px){
+  .h1main{
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    color: #FFF;
+  }
+
+  .h1main.red{
+    color: #E45C60;
+  }
+
+  .main-text{
+    padding-top: 100px;
+  }
 }
 
 @media (min-width: 640px) {
