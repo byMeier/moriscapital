@@ -359,9 +359,10 @@ html{
 
     .h1serv{
         font-size: 2.5rem;
-        font-weight: 700;
+        font-weight: 600;
         text-align: center;
         line-height: 42px;
+        color: #FFF;
     }
     .h1serv.sky{
         color: #1369C0;
@@ -369,13 +370,28 @@ html{
     .h1serv.darkblue{
         color: #173552;
     }
+    .h1serv.grey{
+        color: #87A4C1;
+    }
 
     .glassmorphism{
-        width: 80vw;
+        width: 75vw;
         padding: 1.5rem;
         border-radius: 20px;
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.300), rgb(224, 224, 224, 0.300));
-        z-index: 1;
+        position: relative;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        z-index: 5;
+        margin: auto;
+        margin-top: 1.5rem;
+    }
+
+    .glassmorphism.mt-7{
+        width: 75vw;
+        padding: 1.5rem;
+        border-radius: 20px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.300), rgb(224, 224, 224, 0.300));
         position: relative;
         margin-left: 1.5rem;
         margin-right: 1.5rem;
@@ -487,13 +503,15 @@ html{
         text-align: justify;
         font-size: 1rem;
         font-weight: 400;
+        line-height: 16px;
         margin: auto;
     }
 
     .como-img{
         margin: auto;
-        width: 85vw;
+        width: 77vw;
         margin-top: -1rem;
+        z-index: 10;
     }
 
     .h3como{
@@ -525,4 +543,249 @@ html{
         position: absolute;
     }
 
-}
+    /* COMO EMPEZAR A INVERTIR */
+
+    .glassmorphism-invertir{
+        width: 105px;
+        padding: 0.850rem;
+        text-align: center;
+        border-radius: 20px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.500), rgb(224, 224, 224, 0.500));
+        position: absolute;
+        z-index: 10;
+        margin: auto;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: start;
+        color: #173552;
+        transform: translate(15px, -40px);
+        backdrop-filter: blur(7px);
+    }
+    .container-invertir{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+    }
+    .glassmorphism-invertir.movder{
+        transform: translate(-15px, 20px);
+    }
+
+    .glassmorphism-color{
+        width: 75vw;
+        padding: 1.250rem;
+        padding-left: 4rem;
+        border-radius: 20px;
+        background: linear-gradient(135deg, rgba(19, 105, 192, 0.750), rgba(99, 148, 198, 0.750));
+        position: relative;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        z-index: 5;
+        margin: auto;
+        margin-top: 4rem;
+        font-size: 1.250rem;
+        font-weight: 600;
+        text-align: start;
+        color: #fff;
+    }
+    .glassmorphism-color.c1{
+        background: linear-gradient(135deg, rgba(19, 105, 192, 0.750), rgba(216, 142, 142, 0.750));
+        padding-left: 1.250rem;
+        padding-right: 4rem;
+        text-align: end;
+    }
+    .glassmorphism-color.c2{
+        background: linear-gradient(135deg, rgba(19, 105, 192, 0.750), rgba(216, 95, 95, 0.750));
+    }
+    .glassmorphism-color.c3{
+        background: linear-gradient(135deg, rgba(19, 105, 192, 0.750), rgba(221, 49, 52, 0.75));
+        padding-left: 1.250rem;
+        padding-right: 4rem;
+        text-align: end;
+    }
+    .glassmorphism-color.c4{
+        background: linear-gradient(135deg, rgba(216, 95, 95, 0.750), rgba(237, 50, 55, 0.750));
+    }
+    
+    .proyeccion-img{
+        margin: auto;
+        width: 75vw;
+        margin-top: 3rem;
+    }
+
+    /* NOSOTROS */
+
+    .nosotros{
+        background: linear-gradient(135deg in, #021750, #0536B6);
+    }
+
+    .h3nos{
+        text-align: justify;
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 20px;
+        color: #FFF;
+    }
+    .h3nos2{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 15px;
+        color: #FFF;
+    }
+    .h3nos2.red{
+        font-size: 2rem;
+        color: #ED3237;
+    }
+
+    .nos-img{
+        margin: auto;
+        width: 60vw;
+        margin-top: 3rem;
+    }
+
+    .h2nos{
+        font-size: 2rem;
+        font-weight: 500;
+        text-align: center;
+        color: #FFF;
+    }
+    .h2nos2{
+        line-height: 40px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-align: center;
+        color: #FFF;
+    }
+
+    .h1nos{
+        font-size: 45px;
+        font-weight: 600;
+        line-height: 60px;
+        color: #FFF;
+        text-align: start;
+    }
+    .h1nos.r{
+        color: #E45C60;
+        text-align: end;
+    }
+    .h1nos.m {
+        text-align: center;
+    }
+
+    .glassmorphism-nos{
+        width: 150px;
+        padding: 0.850rem;
+        border-radius: 20px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.500), rgb(224, 224, 224, 0.500));
+        position: relative;
+        z-index: 10;
+        margin: auto;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        color: #173552;
+        backdrop-filter: blur(7px);
+    }
+    .glassmorphism-nosp{
+        width: 75vw;
+        padding: 1.5rem;
+        border-radius: 20px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.300), rgb(224, 224, 224, 0.300));
+        position: relative;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        z-index: 5;
+        margin: auto;
+        margin-top: -1rem;
+        color: #FFF;
+    }
+
+    /* SEGURIDAD SECTION */
+    .seguridad-container{
+        margin: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .glassmorphism-s{
+        width: 30vw;
+        padding: 0.2rem;
+        border-radius: 20px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.700), rgb(224, 224, 224, 0.700));
+        backdrop-filter: blur(7px);
+        position: relative;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        z-index: 5;
+        margin: auto;
+        margin-top: 1.5rem;
+    }
+    .h3seg{
+        margin-top: 1.5rem;
+        text-align: start;
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 20px;
+        color: #000000;
+        align-self: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .h3seg.end{
+        text-align: end;
+    }
+
+    .entes{
+        width: 50vw;
+        margin: auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .entes.com{
+        width: 35vw;
+    }
+
+    /* FOOTER */
+    .glassmorphism-f{
+        width: 85vw;
+        padding: 1rem;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.700), rgb(224, 224, 224, 0.700));
+        backdrop-filter: blur(10px);
+        position: relative;
+        z-index: 5;
+        margin: auto;
+        margin-top: 1.5rem;
+    }
+
+    .pf{
+        text-align: start;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 16px;
+        color: #878787;
+        align-self: center;
+    }
+    .pf.strong{
+        font-weight: 600;
+    }
+    .pf.center{
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .iframe{
+        width: 100%;
+        border-radius: 20px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .ubi-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: auto;
+        justify-content: center;
+    }
+} 
