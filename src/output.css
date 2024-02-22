@@ -2054,6 +2054,20 @@ video {
   padding: 0.75rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -2080,6 +2094,10 @@ video {
 
 .pt-7 {
   padding-top: 1.75rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .pt-96 {
@@ -2548,12 +2566,6 @@ video {
   forced-color-adjust: none;
 }
 
-/* .header.blur {
-    transition: .2s;
-    background-color: rgba(29, 29, 27, 0.4);
-    backdrop-filter: blur(15px);
-} */
-
 html{
   font-family: "League Spartan", sans-serif;
   font-optical-sizing: auto;
@@ -2564,8 +2576,15 @@ html{
   width: 100%;
   height: 80px;
   position: fixed;
-  background-color: #01155069;
-  z-index: 1000;
+  z-index: 50;
+  background-color: rgba(1, 21, 80, 0);
+  transition: .5s;
+}
+
+.header.blured{
+  background-color: rgba(23, 53, 82, 0.850);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
 }
 
 .nav{
@@ -2575,7 +2594,7 @@ html{
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .logo{
@@ -2833,7 +2852,7 @@ html{
   }
 }
 
-@media (min-width: 230px){
+@media (min-width: 280px){
   /* MAIN SECTION */
 
   .main{
@@ -2957,8 +2976,8 @@ html{
     position: relative;
     box-shadow:1px 1px 10px #00000025;
     margin-top: -1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: auto;
+    max-width: 230px;
   }
 
   /* BENEFICIOS */
@@ -3351,11 +3370,68 @@ html{
     text-align: center;
   }
 
-  .iframe{
+  .smedia-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .smedia{
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    color: #000000;
+    padding: 0.8rem;
+    transition: .7s;
+    background: linear-gradient(120deg, var(--c1, #ffffff), var(--c2, #ffffff), var(--c1, #173552)) var(--x, 0)/ 400%;
+    background-size: 300% 100%;
+    border-radius: 100%;
+    margin: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .smedia:hover{
+    --x: 100%;
+    color: #ffffff;
+    transition: .3s;
+  }
+
+  .smedia img.lnkdn, .smedia img.ig, .smedia img.wsp{
+    position: absolute;
+    opacity: 1;
+    width: 60px;
+    height: 60px;
+    transition: opacity 0.3s;
+    transform: translate(-12px, -12px);
+  }
+
+  .smedia img.wsp:hover, .smedia img.ig:hover, .smedia img.lnkdn:hover{
+    opacity: 0;
+  }
+
+  .smedia img.wsp-w, .smedia img.ig-w, .smedia img.lnkdn-w{
+    position: absolute;
+    opacity: 0;
+    width: 60px;
+    height: 60px;
+    transition: opacity 0.3s;
+    transform: translate(-12px, -12px);
+  }
+
+  .smedia img.wsp-w:hover, .smedia img.ig-w:hover, .smedia img.lnkdn-w:hover{
+    opacity: 1;
+  }
+
+  iframe{
     width: 100%;
     border-radius: 20px;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 
   .ubi-container{
@@ -3364,6 +3440,7 @@ html{
     flex-wrap: nowrap;
     margin: auto;
     justify-content: center;
+    margin-bottom: 1rem;
   }
 }
 
