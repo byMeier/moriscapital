@@ -31,15 +31,17 @@ window.onscroll = function () {
 burguer.addEventListener("click", () => {
     burguer.classList.toggle("active");
     nav.classList.toggle("visible");
+    header.classList.toggle("blured");
 });
 
-/* burger close */
+// CERRAR MENÚ
+
 let navButtons = document.querySelectorAll(".nav-button, .contacto");
 
 navButtons.forEach((button) => {
     button.addEventListener("click", () => {
         burguer.classList.remove("active");
         nav.classList.remove("visible");
-        header.classList.remove("mobile");
+        header.classList.remove("blured");
     });
 });
