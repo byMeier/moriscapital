@@ -31,7 +31,7 @@ window.onscroll = function () {
 burguer.addEventListener("click", () => {
     burguer.classList.toggle("active");
     nav.classList.toggle("visible");
-    header.classList.toggle("blured");
+    header.classList.add("blured");
 });
 
 // CERRAR MENÚ
@@ -42,6 +42,5 @@ navButtons.forEach((button) => {
     button.addEventListener("click", () => {
         burguer.classList.remove("active");
         nav.classList.remove("visible");
-        header.classList.remove("blured");
     });
 });
