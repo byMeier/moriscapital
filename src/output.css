@@ -940,6 +940,10 @@ video {
   max-width: 28rem;
 }
 
+.max-w-sm {
+  max-width: 24rem;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -2632,10 +2636,11 @@ html{
 .logo{
   display: flex;
   align-self: flex-start;
-  width: 14rem;
-  height: 100%;
+  width: 5rem;
+  height: 80%;
   padding-left: 0.5rem;
   margin-left: 10px;
+  margin-top: 10px;
 }
 
 .nav-list{
@@ -3123,6 +3128,10 @@ html{
     max-width: 300px;
   }
 
+  .proyeccion-img-full{
+    display: none;
+  }
+
   .main-img2{
     margin-bottom: 2rem;
   }
@@ -3592,6 +3601,10 @@ html{
     font-size: 3rem;
   }
 
+  .h1serv.start{
+    text-align: start;
+  }
+
   .flexit{
     display: flex;
     flex-flow: row nowrap;
@@ -3605,7 +3618,8 @@ html{
   }
 
   .glassmorphism-shadow{
-    max-width: 150px;
+    max-width: 180px;
+    min-width: 180px;
     margin: 0;
     align-self: center;
     transform: translate(0px,0);
@@ -3619,6 +3633,7 @@ html{
 
   .beneficios{
     flex-direction: row;
+    text-align: start;
     gap: 20px;
   }
 
@@ -3629,6 +3644,10 @@ html{
 
   .glassmorphism-blue{
     max-width: 320px;
+    min-height: 102px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .p{
@@ -3721,6 +3740,11 @@ html{
     max-width: 400px;
     margin: auto;
   }
+
+  .h1serv.bene{
+    font-size: 3rem;
+    line-height: 40px;
+  }
 }
 
 @media (min-width: 700px){
@@ -3782,12 +3806,105 @@ html{
   }
 
   .como-img{
-    display: block;
-    width: 30vw;
-    margin-left: -1rem;
+    display: flex;
     z-index: 10;
-    max-width: 220px;
+    max-width: 250px;
     position: relative;
+    margin-left: -10px;
+  }
+
+  .como-img.right{
+    margin-right: -10px;
+  }
+
+  .beneficios-popups{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 650px;
+    gap: 2rem;
+  }
+
+  .popup{
+    max-width: 320px;
+  }
+
+  .glassmorphism{
+    max-width: 700px;
+  }
+
+  .glassmorphism.mt-7{
+    margin: 0;
+  }
+
+  .flexit-como{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flexit-como.reverse{
+    flex-flow: row-reverse nowrap;
+  }
+
+  .p2{
+    margin: 0;
+    max-width: 95%;
+  }
+
+  .glassmorphism.mt-7.invsol{
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .glassmorphism.mt-7.bencon{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .glassmorphism.mt-7.transp{
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .glassmorphism.mt-7.distri{
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fleximg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: -10px;
+  }
+
+  .br{
+    display: none;
+  }
+
+  .proyeccion-img{
+    display: none;
+  }
+
+  .proyeccion-img-full{
+    display: block;
+    margin: auto;
+    width: 80vw;
+    margin-top: 3rem;
+    max-width: 900px;
   }
 }
 
