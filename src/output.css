@@ -4033,6 +4033,10 @@ html{
   .glassmorphism-color.c4{
     max-width: 700px;
   }
+
+  .empieza{
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 1000px) and (max-width: 1400px){
@@ -4180,11 +4184,6 @@ html{
 
   .glassmorphism-color.c4{
     max-width: 900px;
-  }
-
-  .empieza{
-    max-width: 200px;
-    min-width: 200px;
   }
 }
 
