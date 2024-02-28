@@ -52,6 +52,7 @@ html{
     font-weight: 600;
     padding: 0.75rem;
     margin: 1rem;
+    margin-left: 7rem;
     padding-left: 1rem;
 }
 
@@ -336,6 +337,10 @@ html{
         margin-top: 2rem;
         margin-bottom: 1rem;
         max-width: 240px;
+        min-height: 82px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .h2{
