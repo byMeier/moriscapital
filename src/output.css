@@ -2140,6 +2140,10 @@ video {
   padding-top: 4rem;
 }
 
+.pt-20 {
+  padding-top: 5rem;
+}
+
 .pt-5 {
   padding-top: 1.25rem;
 }
@@ -2154,10 +2158,6 @@ video {
 
 .pt-96 {
   padding-top: 24rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
 }
 
 .text-left {
@@ -2662,6 +2662,14 @@ html{
   margin-top: 12px;
 }
 
+.logo-link{
+  transition: filter .3s;
+}
+
+.logo-link:hover {
+  filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.3));
+}
+
 .nav-list{
   display: flex;
   width: 50%;
@@ -2712,17 +2720,17 @@ html{
   bottom: 1;
   left: 0;
   right: 1;
-  margin: auto;
   width: 2px;
   content: '.';
   color: transparent;
   background: #dfdfdf00;
   height: 0%;
+  margin-left: 5px;
 }
 
 .nav .nav-list .li .nav-button:hover:after {
   background: #ED3237;
-  height: 100%;
+  height: 87%;
 }
 
 .contacto{
@@ -2774,7 +2782,7 @@ html{
 }
 
 #servicios, #como, #nosotros, #seguridad{
-  scroll-margin-top: 80px;
+  scroll-margin-top: 79px;
 }
 
 /* FIRST MOBILE ESTÁTICO */
@@ -2943,6 +2951,8 @@ html{
 
   .h3{
     text-align: justify;
+    -moz-text-align-last: justify;
+         text-align-last: justify;
     text-justify: inter-word;
     font-size: 1.225rem;
     font-weight: 500;
@@ -3300,11 +3310,16 @@ html{
     background-color: rgba(0, 0, 0, 0.800);
     -webkit-backdrop-filter: blur(15px);
             backdrop-filter: blur(15px);
+    transition: .5s;
   }
 
   #modal1, #modal2, #modal3{
     background-color: transparent;
     width: 100%;
+  }
+
+  .modal{
+    transition: opacity 0.5s ease;
   }
 
   .p-modal{
@@ -4377,8 +4392,6 @@ html{
     opacity: 1;
     visibility: visible;
     transition: .5s;
-    -webkit-backdrop-filter: blur(20px);
-            backdrop-filter: blur(20px);
   }
 
   .nav{
@@ -4427,14 +4440,12 @@ html{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 80px;
+    top: 79px;
     right: 0;
     bottom: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(29, 29, 27, 0.970);
-    -webkit-backdrop-filter: blur(20px);
-            backdrop-filter: blur(20px);
+    background-color: rgba(10, 10, 10, 0.85);
     justify-content: start;
     z-index: 30;
   }
@@ -4494,6 +4505,10 @@ html{
 
   #burguer.active:before {
     transform: rotate(45deg);
+  }
+
+  .nav .nav-list .li .nav-button:after {
+    margin-left: -4px;
   }
 }
 

@@ -40,6 +40,7 @@ window.onscroll = function () {
 burguer.addEventListener("click", () => {
     burguer.classList.toggle("active");
     nav.classList.toggle("visible");
+    nav.classList.toggle("blured");
     header.classList.add("blured");
 });
 
