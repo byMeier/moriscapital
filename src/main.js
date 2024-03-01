@@ -1,8 +1,17 @@
 // // DECLARACIÓN DE VARIABLES
 
 let nav = document.querySelector(".nav-list");
-let header = document.querySelector(".header")
-let burguer = document.querySelector("#burguer")
+let header = document.querySelector(".header");
+let burguer = document.querySelector("#burguer");
+let btnAbrirModal1 = document.querySelector("#btn-abrir-modal1");
+let btnCerrarModal1 = document.querySelector("#btn-cerrar-modal1");
+let modal1 = document.querySelector("#modal1");
+let btnAbrirModal2 = document.querySelector("#btn-abrir-modal2");
+let btnCerrarModal2 = document.querySelector("#btn-cerrar-modal2");
+let modal2 = document.querySelector("#modal2");
+let btnAbrirModal3 = document.querySelector("#btn-abrir-modal3");
+let btnCerrarModal3 = document.querySelector("#btn-cerrar-modal3");
+let modal3 = document.querySelector("#modal3");
 // // let scrolldown = document.querySelector("#scroll-down")
 
 // // HEADER BLUR
@@ -44,3 +53,36 @@ navButtons.forEach((button) => {
         nav.classList.remove("visible");
     });
 });
+
+// MODAL
+
+// VICENTE
+btnAbrirModal1.addEventListener("click",()=>{
+    modal1.showModal();
+    modal1.scrollTo(0, 0);
+})
+
+btnCerrarModal1.addEventListener("click",()=>{
+    modal1.close();
+})
+
+//BERNARDO
+btnAbrirModal2.addEventListener("click",()=>{
+    modal2.showModal();
+    modal2.scrollTo(0, 0);
+})
+
+btnCerrarModal2.addEventListener("click",()=>{
+    modal2.close();
+})
+
+//BRENDA
+btnAbrirModal3.addEventListener("click",()=>{
+    modal3.showModal();
+    modal3.scrollTo(0, 0);
+})
+
+btnCerrarModal3.addEventListener("click",()=>{
+    modal3.close();
+})
+

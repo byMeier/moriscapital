@@ -151,6 +151,10 @@ html{
     color: white;
 }
 
+#servicios, #como, #nosotros, #seguridad{
+    scroll-margin-top: 80px;
+}
+
 /* FIRST MOBILE ESTÁTICO */
 
 @media (min-width: 0px){
@@ -222,7 +226,7 @@ html{
         color: #FFF;
     }
     .h1serv.bene{
-        font-size: 1.850rem;
+        font-size: 1.8rem;
         line-height: 35px;
     }
     .h1serv.sky{
@@ -410,18 +414,36 @@ html{
     }
 
     .coins-beneficios1{
-        width: 30%;
+        width: 35vw;
+        max-width: 150px;
         z-index: 15;
-        transform: translate(0, 12rem);
         position: absolute;
+        left: 0;
+        transform: translate(0,70px);
     }
 
     .coins-beneficios2{
-        width: 30%;
+        width: 35vw;
+        max-width: 150px;
         z-index: 15;
-        transform: translate(0, 12rem);
-        margin-left: 70vw;
         position: absolute;
+        right: 0;
+        transform: translate(0,70px);
+    }
+
+    .coins-beneficios1-desk{
+        display: none;
+    }
+
+    .coins-beneficios2-desk{
+        display: none;
+    }
+
+    .coins-invsol{
+        position: absolute;
+        width: 70px;
+        z-index: 15;
+        transform: translate(-65px, -20px);
     }
 
     /* COMO EMPEZAR A INVERTIR */
@@ -518,6 +540,10 @@ html{
 
     .main-img2{
         margin-bottom: 4rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
     }
 
     /* NOSOTROS */
@@ -560,11 +586,12 @@ html{
         color: #FFF;
     }
     .h2nos2{
-        line-height: 40px;
-        font-size: 1.2rem;
+        line-height: 45px;
+        font-size: 1.5rem;
         font-weight: 500;
         text-align: center;
         color: #FFF;
+        margin: auto;
     }
 
     .h1nos{
@@ -609,6 +636,39 @@ html{
         margin: auto;
         margin-top: -1rem;
         color: #FFF;
+    }
+
+    .container-center{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #modal1::backdrop, #modal2::backdrop, #modal3::backdrop{
+        background-color: rgba(0, 0, 0, 0.800);
+        backdrop-filter: blur(15px);
+    }
+
+    #modal1, #modal2, #modal3{
+        background-color: transparent;
+        width: 100%;
+    }
+
+    .p-modal{
+        color: #FFF;
+        max-width: none;
+        margin: auto;
+        text-align: center;
+        font-size: 1rem;
+        padding: 1rem;
+        max-width: 900px;
+    }
+
+    .nos-img .modal-nos{
+        width: 50%;
+        max-width: 150px;
+        margin-top: 0;
     }
 
     /* SEGURIDAD SECTION */
@@ -657,6 +717,7 @@ html{
         height: 80px;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
+        cursor:default;
     }
 
     .licencias .licen-link .entes{
@@ -836,6 +897,11 @@ html{
         justify-content: center;
         margin-bottom: 1rem;
     }
+
+    .coins-invsol-des{
+        display: none;
+    }
+
 } 
 
 /* RESPONSIVE WEB DESIGN */
@@ -917,6 +983,11 @@ html{
         padding: 1rem;
         padding-bottom: 0;
         min-width: 200px;
+    }
+
+    .coins-invsol{
+        width: 80px;
+        transform: translate(-70px, -50px);
     }
 
 }
@@ -1144,6 +1215,43 @@ html{
         align-content: center;
     }
 
+    .coins-invsol{
+        width: 100px;
+        transform: translate(-90px, -30px);
+    }
+
+    .coins-beneficios1{
+        display: none;
+    }
+
+    .coins-beneficios2{
+        display: none;
+    }
+
+    .coins-beneficios1-desk{
+        display: block;
+        width: 35vw;
+        z-index: 15;
+        position: absolute;
+        max-width: 180px;
+        transform: translate(0,50px);
+        left: 0;
+    }
+
+    .coins-beneficios2-desk{
+        display: block;
+        width: 35vw;
+        max-width: 180px;
+        z-index: 15;
+        position: absolute;
+        transform: translate(0,50px);
+        right: 0;
+    }
+
+    .p-modal{
+        font-size: 1.250rem;
+    }
+
 }
 
 @media (min-width: 700px){
@@ -1162,6 +1270,39 @@ html{
         max-width: 440px;
         font-size: 1.5rem;
     }
+
+    .coins-beneficios1-desk{
+        left: 5%;
+        max-width: 200px;
+        position: relative;
+        transform: translate(40px, 50px);
+    }
+
+    .coins-beneficios2-desk{
+        right: 5%;
+        max-width: 200px;
+        position: relative;
+        transform: translate(-40px, 50px);
+    }
+
+    .container-img{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .main-img2{
+        max-width: 650px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .glassmorphism.bis.dos{
+        min-width: 400px;
+    }
+
 }
 
 @media (min-width: 1000px){
@@ -1374,6 +1515,22 @@ html{
         font-size: 1.5rem;
     }
 
+    .glassmorphism-nosp{
+        max-width: 800px;
+    }
+
+    .coins-invsol{
+        display: none;
+    }
+
+    .coins-invsol-des{
+        display: block;
+        width: 140px;
+        margin-left: -70px;
+        z-index: 15;
+        transform: translate(40px, -10px);
+    }
+
 }
 
 @media (min-width: 1000px) and (max-width: 1400px){
@@ -1394,6 +1551,10 @@ html{
     .h2main{
         font-size: 2rem;
         line-height: 40px;
+    }
+
+    .p-modal{
+        font-size: 1.4rem;
     }
 
 }
@@ -1521,6 +1682,24 @@ html{
     }
     .glassmorphism-color.c4{
         max-width: 900px;
+    }
+
+    .glassmorphism-color.c1, .glassmorphism-color.c3{
+        max-width: 650px;
+    }
+
+    .main-img2{
+        max-width: 900px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .glassmorphism.bis.dos{
+        min-width: 500px;
+    }
+    .coins-beneficios1-desk, .coins-beneficios2-desk{
+        max-width: 300px;
     }
 
 }

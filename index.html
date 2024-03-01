@@ -102,8 +102,9 @@
         </div>
         <div>
             <article class="flexit-como mb-16 mt-16">
-                <img src="" alt="">
+                    <img class="coins-invsol-des" src="./src/img/coins-invsol.png" alt="">
                     <div class="glassmorphism mt-7 invsol">
+                        <img class="coins-invsol" src="./src/img/coins-invsol.png" alt="">
                         <h2 class="h2 pb-2"">Inversiones <font class="h2 sky">sólidas</font></h2>
                         <p class="p2">Operamos a favor de las instituciones más importantes, como bancos o fondos de inversión, logrando fuerza en el mercado gracias a nuestra operatoria institucional.</p>
                     </div>
@@ -113,7 +114,6 @@
         </div>
         <div>
             <article class="flexit-como reverse mb-16">
-                <img src="" alt="">
                 <div class="glassmorphism mt-7 bencon">
                     <h2 class="h2 pb-2"">Beneficios <font class="h2 sky">constantes</font></h2>
                     <p class="p2">Detectamos oportunidades en los tipos de cambio y nos amoldamos al precio de la moneda. Nuestro sistema está programado para salir en ganancias, sin importar en qué dirección vaya el mercado, reduciendo riesgos constantemente gracias a su inteligencia algorítmica.</p>
@@ -134,8 +134,6 @@
         </div>
         <div>
             <article class="flexit-como reverse mb-16">
-                <img src="" alt="">
-                <img src="" alt="">
                 <div class="glassmorphism mt-7 distri">
                     <h2 class="h2 pb-2">Distribución <br class="br"><font class="h2 sky">de ganancias</font></h2>
                     <p class="p2">El inversor obtendrá ganancias en cada cierre de operaciones, durante toda la semana, las 24 horas del día de forma automática.</p>
@@ -150,16 +148,20 @@
                 </div>
             </article>
         </div>
-        <article class="main-img2">
-            <!-- <img class="coins-beneficios1" src="./src/img/coins-beneficios1.png" alt=""> -->
-                <div class="glassmorphism bis dos">
-                    <h1 class="h1serv bene darkblue">La moneda de <br><font class="h1serv bene sky">tu elección.</font></h1>
-                    <div class="h3como-div">
-                        <h3 class="h3como">El inversor obtendrá ganancias en base a la moneda que elija. Podrá crear una cartera de diversificación sobre la misma moneda, en diferentes monedas.</h3>
+        <div class="container-img">
+            <article class="main-img2">
+                <img class="coins-beneficios1" src="./src/img/coins-beneficios1.png" alt="">
+                <img class="coins-beneficios1-desk" src="./src/img/coins-beneficios1-desk.png" alt="">
+                    <div class="glassmorphism bis dos">
+                        <h1 class="h1serv bene darkblue">La moneda de <br><font class="h1serv bene sky">tu elección.</font></h1>
+                        <div class="h3como-div">
+                            <h3 class="h3como">El inversor obtendrá ganancias en base a la moneda que elija. Podrá crear una cartera de diversificación sobre la misma moneda, en diferentes monedas.</h3>
+                        </div>
                     </div>
-                </div>
-            <!-- <img class="coins-beneficios2" src="./src/img/coins-beneficios2.png" alt=""> -->
-        </article>
+                <img class="coins-beneficios2" src="./src/img/coins-beneficios2.png" alt="">
+                <img class="coins-beneficios2-desk" src="./src/img/coins-beneficios2-desk.png" alt="">
+            </article>
+        </div>
         
         <h1 class="h1serv darkblue">¿Cómo empezar<br> <font class="h1serv sky">a invertir?</font></h1>
         <div class="container-como">
@@ -206,24 +208,59 @@
             <h3 class="h3nos">Somos una firma de inversiones digitales especializada en crear sistemas que se adaptan a diferentes mercados. Nuestra capacidad de crear nuevos modelos de inversión nos mantiene a la vanguardia. Nuestra adaptabilidad en el mercado es nuestro valor más indispensable, esto nos permite brindarle a nuestros inversores sistemas sólidos y estables en el tiempo. </h3>
         </div>
         <div class="flexnos">
-            <article>
+            <article class="container-center">
                 <img class="nos-img" src="./src/img/vicentenos.png" alt="">
                 <h2 class="h2nos mt-4">Vicente Moris</h2>
                 <h3 class="h3nos2">Ceo<font class="h3nos2 red">-</font>Founder</h3>
-                <a class="modal" href=""><h2 class="h2nos2">Leer Biografía</h2></a>
+                <button class="modal-button" id="btn-abrir-modal1"><h2 class="h2nos2">Leer Biografía</h2></button>
             </article>
-            <article>
+            <article class="container-center">
                 <img class="nos-img" src="./src/img/bernardonos.png" alt="">
                 <h2 class="h2nos mt-4">Bernardo Travaglino</h2>
                 <h3 class="h3nos2">Coo<font class="h3nos2 red">-</font>Co-Founder and Advisor</h3>
-                <a class="modal" href=""><h2 class="h2nos2">Leer Biografía</h2></a>
+                <button class="modal-button" id="btn-abrir-modal2"><h2 class="h2nos2">Leer Biografía</h2></button>
             </article>
-            <article>
+            <article class="container-center">
                 <img class="nos-img" src="./src/img/brendanos.png" alt="">
                 <h2 class="h2nos mt-4">Brenda Rodriguez</h2>
                 <h3 class="h3nos2">Cco<font class="h3nos2 red">-</font>Co-Founder</h3>
-                <a class="modal" href=""><h2 class="h2nos2">Leer Biografía</h2></a>
+                <button class="modal-button" id="btn-abrir-modal3"><h2 class="h2nos2">Leer Biografía</h2></button>
             </article>
+            <dialog class="modal" id="modal1">
+                <article class="container-center">
+                    <img class="nos-img modal-nos" src="./src/img/vicentenos.png" alt="">
+                    <h2 class="h2nos mt-4">Vicente Moris</h2>
+                    <h3 class="h3nos2">Ceo<font class="h3nos2 red">-</font>Founder</h3>
+                    <p class="p-modal">Con 25 años de edad lidera Moris Capital. Gracias a su especialización en PNL aplicado al sector empresarial, ha acumulado valiosa experiencia y conocimientos en el ambito de las finanzas. Esta combinación única de habilidades le ha brindado una perspectiva única para abordar las complejidades en las relaciones corporativas. 
+                        Mi nombre es Vicente Moris, joven empresario de la ciudad de Rosario. Mi trayectoria en el sector financiero comenzó hace más de seis años. Me especialice en economía empresarial en la CBS (Copenhagen business school) en Dinamarca. 
+                        Desde un principio, demostré una afinidad natural para entender los matices del ser humano y los mercados. Mi pasión por las finanzas y visión estratégica me han permitido navegar con éxito en un terreno que a menudo es complejo y desafiante, perfeccionándome  para asumir el rol de Director Ejecutivo y fundador de Moris Capital.</p>
+                    <button class="modal-button" id="btn-cerrar-modal1"><h2 class="h2nos2">Cerrar</h2></button>
+                </article>
+            </dialog>
+            <dialog class="modal" id="modal2">
+                <article class="container-center">
+                    <img class="nos-img modal-nos" src="./src/img/bernardonos.png" alt="">
+                    <h2 class="h2nos mt-4">Bernardo Travaglino</h2>
+                    <h3 class="h3nos2">Coo<font class="h3nos2 red">-</font>Co-Founder and Advisor</h3>
+                    <p class="p-modal">Con 24 años de edad está encargado de las operaciones y de la gestión financiera de Moris Capital. Su enfoque radica en aportar valor mediante la creación de nuevos sistemas para simplificar las inversiones y generar grandes cambios en el sector financiero. 
+                        Mi nombre es Bernardo Travaglino. Soy economista de la ciudad de Rosario. Con más de cinco años de experiencia me he especializado como inversor en el mercado bursátil, mercado Forex, criptodivisas y en fondos de inversión. Me gradué como licenciado en economía en la UNR( Universidad Nacional de Rosario) donde adquirí mis bases sólidas para hoy día asumir el rol como director de operaciones de Moris Capital. 
+                        Mi visión es clara, cambiar el mundo financiero.</p>
+                    <button class="modal-button" id="btn-cerrar-modal2"><h2 class="h2nos2">Cerrar</h2></button>
+                </article>
+            </dialog>
+            <dialog class="modal" id="modal3">
+                <article class="container-center">
+                    <img class="nos-img modal-nos" src="./src/img/brendanos.png" alt="">
+                    <h2 class="h2nos mt-4">Brenda Rodriguez</h2>
+                    <h3 class="h3nos2">Cco<font class="h3nos2 red">-</font>Co-Founder</h3>
+                    <p class="p-modal">Con 33 años de edad, desempeña un papel clave en la fuerza comercial de Moris Capital
+                        Durante más de diez años, se ha especializado en neuroventas y en el manejo de equipos comerciales, estudiando el comportamiento del consumidor. 
+                        Mi nombre es Brenda Rodriguez, directora comercial y cofundadora de Moris Capital.
+                        Identificar oportunidades, potenciar las habilidades de nuestro equipo y establecer relaciones sólidas con nuestros inversores es mi trabajo. 
+                        Con pasión, experiencia y visión he logrado ser el engranaje femenino Perfecto, dando estabilidad a Moris Capital.</p>
+                    <button class="modal-button" id="btn-cerrar-modal3"><h2 class="h2nos2">Cerrar</h2></button>
+                </article>
+            </dialog>
         </div>
         <h1 class="h1serv mt-12 mb-12">Nuestros <font class="h1serv grey">valores</font></h1>
         <div class="mt-12 mb-12">
@@ -243,11 +280,11 @@
     </section>
 
     <!-- SEGURIDAD -->
-    <section class="seguridad mt-20 mx-5" id="seguridad">
+    <section class="seguridad pt-20 mx-5" id="seguridad">
         <h1 class="h1serv sky mx-7">Seguridad para los fondos <font class="h1serv darkblue">del inversor</font></h1>
         <div class="ticks">
             <div class="seguridad-container">
-                <div class="glassmorphism-s"><img src="./src/img/secure1.png" alt=""></div>
+                <div class="glassmorphism-s"><img src="./src/img/secure4.png" alt=""></div>
                 <h3 class="h3seg">Actividades reguladas: Licencia FSC nro de corretaje 000138/437.</h3>
             </div>
             <div class="seguridad-container">
@@ -255,15 +292,15 @@
                 <div class="glassmorphism-s"><img src="./src/img/secure4.png" alt=""></div>
             </div>
             <div class="seguridad-container">
-                <div class="glassmorphism-s"><img src="./src/img/secure3.png" alt=""></div>
+                <div class="glassmorphism-s"><img src="./src/img/secure4.png" alt=""></div>
                 <h3 class="h3seg">Calidad de ejecución certificada por “Verify My Trade”.</h3>
             </div>
             <div class="seguridad-container">
                 <h3 class="h3seg end">Miembro del fondo de compensación de la comisión financiera.</h3>
-                <div class="glassmorphism-s"><img src="./src/img/secure5.png" alt=""></div>
+                <div class="glassmorphism-s"><img src="./src/img/secure4.png" alt=""></div>
             </div>
             <div class="seguridad-container">
-                <div class="glassmorphism-s"><img src="./src/img/secure2.png" alt=""></div>
+                <div class="glassmorphism-s"><img src="./src/img/secure4.png" alt=""></div>
                 <h3 class="h3seg end2">Protección del balance negativo.</h3>
             </div>
         </div>
@@ -304,11 +341,11 @@
             <div class="flexfoot1">
                 <img class="logo2" src="./src/img/logo-gray.png" alt="">
                 <div class="smedia-container">
-                    <a class="smedia" href="">
+                    <a class="smedia" href="https://www.linkedin.com/company/moris-capital-in?trk=blended-typeahead" target="_blank">
                         <img class="lnkdn" src="./src/img/lnkdn.png" alt="">
                         <img class="lnkdn-w" src="./src/img/lnkdn-w.png" alt="">
                     </a>
-                    <a class="smedia" href="https://www.instagram.com/moriscapital.in?igsh=MTAyMTZyYzF0c3Jpag%3D%3D&utm_source=qr">
+                    <a class="smedia" href="https://www.instagram.com/moriscapital.in?igsh=MTAyMTZyYzF0c3Jpag%3D%3D&utm_source=qr" target="_blank">
                         <img class="ig" src="./src/img/ig.png" alt="">
                         <img class="ig-w" src="./src/img/ig-w.png" alt="">
                     </a>
