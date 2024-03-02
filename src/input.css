@@ -322,9 +322,7 @@ html{
     }
 
     .h3{
-        text-align: justify;
-        text-align-last: justify;
-        text-justify: inter-word;
+        text-align: center;
         font-size: 1.225rem;
         font-weight: 500;
         line-height: 20px;
@@ -386,8 +384,7 @@ html{
 
     .p2{
         max-width: 300px;
-        text-align: justify;
-        text-justify: inter-word;
+        text-align: center;
         font-size: 1rem;
         font-weight: 400;
         line-height: 16px;
@@ -570,8 +567,7 @@ html{
     }
 
     .h3nos{
-        text-align: justify;
-        text-justify: inter-word;
+        text-align: center;
         font-size: 1.3rem;
         font-weight: 400;
         line-height: 20px;
@@ -744,7 +740,6 @@ html{
         height: 80px;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
-        cursor:default;
     }
 
     .licencias .licen-link .entes{
@@ -796,6 +791,7 @@ html{
         padding-right: 0;
         color: #878787;
         font-size: 1rem;
+        text-align: justify;
     }
 
     .glassmorphism.bis.tres{
@@ -1078,6 +1074,13 @@ html{
 
     .h1serv.start{
         text-align: start;
+    }
+
+    .hstart{
+        text-align: start;
+    }
+    .hend{
+        text-align: end;
     }
 
     .flexit{
