@@ -205,6 +205,7 @@ html{
         position: relative;
         padding-top: 1rem;
         flex-grow: 0.8;
+        animation: none;
     }
 
     .phone-t{
@@ -458,6 +459,19 @@ html{
         align-content: center;
         max-width: 400px;
         margin: auto;
+    }
+
+    .espacio{
+        width: 75vw;
+        max-width: 350px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.300), rgb(224, 224, 224, 0.300));
+        position: relative;
+        z-index: 5;
+        margin: auto;
+    }
+
+    .fleximg{
+        display: none;
     }
 
     /* COMO EMPEZAR A INVERTIR */
@@ -1470,6 +1484,10 @@ html{
         margin-right: -10px;
     }
 
+    .espacio{
+        display: none;
+    }
+
     .br{
         display: none;
     }
@@ -1879,4 +1897,32 @@ html{
         display: none;
     }
 
+}
+
+/* ANIMACIONES */
+
+@keyframes show {
+	from {
+		opacity: 0;
+		scale: 25%;
+	}
+
+	to {
+		opacity: 1;
+		scale: 100%;
+	}
+}
+
+img, .glassmorphism, .glassmorphism-color, .glassmorphism-invertir, .glassmorphism-blue, .h1nos, .glassmorphism-nos, .glassmorphism-nosp, .licen-link, .h3seg, .glassmorphism-s{
+	view-timeline-name: --ani;
+	view-timeline-axis: block;
+	animation-timeline: --ani;
+	animation-name: show;
+	animation-range: entry 25% cover 30%;
+	animation-fill-mode: both;
+
+}
+
+.lnkdn-w, .wsp-w, .ig-w, .lnkdn, .wsp, .ig, .entes, .entes-c, .logo2, .w-7.mr-3, .glassmorphism.bis.tres{
+    animation: none;
 }

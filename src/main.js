@@ -87,3 +87,6 @@ btnCerrarModal3.addEventListener("click",()=>{
     modal3.close();
 })
 
+// ANIMATE ON SCROLL //
+
+AOS.init();
