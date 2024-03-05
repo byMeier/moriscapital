@@ -204,7 +204,6 @@ html{
         max-width: 330px;
         position: relative;
         padding-top: 1rem;
-        flex-grow: 0.8;
         animation: none;
     }
 
