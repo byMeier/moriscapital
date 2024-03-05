@@ -2828,6 +2828,7 @@ html{
     position: relative;
     padding-top: 1rem;
     animation: none;
+    flex-grow: 0.8;
   }
 
   .phone-t{
