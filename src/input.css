@@ -477,7 +477,8 @@ html{
     /* COMO EMPEZAR A INVERTIR */
 
     .glassmorphism-invertir{
-        width: 100px;
+        width: 96px;
+        min-width: 96px;
         padding: 0.850rem;
         text-align: center;
         border-radius: 20px;
@@ -1901,7 +1902,7 @@ html{
 
 /* ANIMACIONES */
 
-/* @keyframes show {
+@keyframes show {
 	from {
 		opacity: 0;
 		scale: 25%;
@@ -1925,4 +1926,4 @@ img, .glassmorphism, .glassmorphism-color, .glassmorphism-invertir, .glassmorphi
 
 .lnkdn-w, .wsp-w, .ig-w, .lnkdn, .wsp, .ig, .entes, .entes-c, .logo2, .w-7.mr-3, .glassmorphism.bis.tres{
     animation: none;
-} */
+}

@@ -3113,7 +3113,8 @@ html{
   /* COMO EMPEZAR A INVERTIR */
 
   .glassmorphism-invertir{
-    width: 100px;
+    width: 96px;
+    min-width: 96px;
     padding: 0.850rem;
     text-align: center;
     border-radius: 20px;
@@ -4565,31 +4566,30 @@ html{
 
 /* ANIMACIONES */
 
-/* @keyframes show {
-	from {
-		opacity: 0;
-		scale: 25%;
-	}
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
 
-	to {
-		opacity: 1;
-		scale: 100%;
-	}
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
 }
 
 img, .glassmorphism, .glassmorphism-color, .glassmorphism-invertir, .glassmorphism-blue, .h1nos, .glassmorphism-nos, .glassmorphism-nosp, .licen-link, .h3seg, .glassmorphism-s{
-	view-timeline-name: --ani;
-	view-timeline-axis: block;
-	animation-timeline: --ani;
-	animation-name: show;
-	animation-range: entry 25% cover 30%;
-	animation-fill-mode: both;
-
+  view-timeline-name: --ani;
+  view-timeline-axis: block;
+  animation-timeline: --ani;
+  animation-name: show;
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
 }
 
 .lnkdn-w, .wsp-w, .ig-w, .lnkdn, .wsp, .ig, .entes, .entes-c, .logo2, .w-7.mr-3, .glassmorphism.bis.tres{
-    animation: none;
-} */
+  animation: none;
+}
 
 @media (min-width: 640px) {
   .sm\:container {
