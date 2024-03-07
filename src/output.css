@@ -2866,6 +2866,10 @@ html{
     color: #1369C0;
   }
 
+  .h1serv.red{
+    color: #E45C60;
+  }
+
   .h1serv.darkblue{
     color: #173552;
   }
@@ -2968,6 +2972,10 @@ html{
 
   .h3.red{
     color: #E45C60;
+  }
+
+  .h3.grey{
+    color: #87A4C1;
   }
 
   .glassmorphism-blue{
@@ -3100,6 +3108,7 @@ html{
   .espacio{
     width: 75vw;
     max-width: 350px;
+    border-radius: 5px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.300), rgb(224, 224, 224, 0.300));
     position: relative;
     z-index: 5;
