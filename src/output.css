@@ -740,9 +740,46 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+}
+
+.my-7 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.-ml-5 {
+  margin-left: -1.25rem;
+}
+
+.-mr-5 {
+  margin-right: -1.25rem;
+}
+
+.-mt-5 {
+  margin-top: -1.25rem;
 }
 
 .mb-10 {
@@ -757,8 +794,16 @@ video {
   margin-bottom: 4rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-20 {
   margin-bottom: 5rem;
+}
+
+.mb-32 {
+  margin-bottom: 8rem;
 }
 
 .mb-5 {
@@ -767,6 +812,10 @@ video {
 
 .mb-7 {
   margin-bottom: 1.75rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .mb-auto {
@@ -811,6 +860,10 @@ video {
 
 .mt-7 {
   margin-top: 1.75rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .mt-96 {
@@ -922,6 +975,14 @@ video {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-11 {
+  width: 2.75rem;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
 }
 
 .w-5 {
@@ -2124,12 +2185,24 @@ video {
   padding-bottom: 6rem;
 }
 
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
 
 .pb-7 {
   padding-bottom: 1.75rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .pt-12 {
@@ -2140,8 +2213,16 @@ video {
   padding-top: 4rem;
 }
 
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .pt-5 {
@@ -2286,6 +2367,14 @@ video {
 .stacked-fractions {
   --tw-numeric-fraction: stacked-fractions;
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
+}
+
+.leading-3 {
+  line-height: .75rem;
+}
+
+.leading-4 {
+  line-height: 1rem;
 }
 
 .text-\[\#336699\]\/\[\.35\] {
@@ -2656,7 +2745,7 @@ html{
 .logo{
   display: flex;
   align-self: flex-start;
-  width: 4.225rem;
+  width: 10rem;
   height: 70%;
   margin-left: 12px;
   margin-top: 12px;
@@ -2681,8 +2770,11 @@ html{
   font-weight: 600;
   padding: 0.75rem;
   margin: 1rem;
-  margin-left: 7rem;
-  padding-left: 1rem;
+}
+
+.button-nav{
+  padding-top: 27px;
+  display: block;
 }
 
 .nav-button {
@@ -2700,6 +2792,56 @@ html{
 #button-xl2{
   width: 6.5rem;
 }
+
+/* SCROLL DOWN ANIMADO
+
+.scroll-down {
+    position: absolute;
+    color: #173552;
+    width: 17px;
+    height: 28px;
+    bottom: 250px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    cursor: pointer;
+    display: block;
+    transition: 1s;
+}
+
+.scroll-down.goodbye {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.scroll-down::before {
+    display: block;
+    position: relative;
+    content: "";
+    width: 25px;
+    padding: 1px;
+    height: 45px;
+    border: 3px solid #173552;
+    border-radius: 100px;
+    box-sizing: content-box;
+}
+
+.scroll-down::after {
+    display: block;
+    position: relative;
+    content: "";
+    width: 20px;
+    height: 20px;
+    bottom: 45px;
+    right: 3px;
+    border-radius: 100%;
+    background-color: #173552;
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+    animation-iteration-count: infinite;
+} */
 
 .nav .nav-list .li .nav-button,
 .nav .nav-list .li .nav-button:after,
@@ -2734,7 +2876,7 @@ html{
 }
 
 .contacto{
-  width: 10%;
+  width: 7%;
   text-decoration: none;
   color: #ffffff;
   padding: 0.8rem;
@@ -2742,10 +2884,34 @@ html{
   background: linear-gradient(120deg, var(--c1, #ffffff00), var(--c2, #ffffff) 90%, var(--c1, #ffffff)) var(--x, 0)/ 200%;
   background-size: 300% 100%;
   border-radius: 20px;
-  margin: 1rem;
+  margin-right: 1rem;
   font-size: 1.1rem;
   font-weight: 600;
   text-align: center;
+}
+
+.button-azul{
+  width: 100%;
+  text-align: center;
+}
+
+.empieza.azul{
+  font-size: 1.650rem;
+  text-align: center;
+  background: linear-gradient(120deg, var(--c1, #1369C0), var(--c2, #00417C) 100%, var(--c1, #00417C)) var(--x, 0)/ 200%;
+  color: #ffffff;
+}
+
+.empieza.azul:hover{
+  --x: 100%;
+  color: #ffffff;
+  transition: .5s;
+}
+
+.contacto.mini{
+  width: 5%;
+  min-width: 100px;
+  margin-right: 0.500rem;
 }
 
 .contacto:hover, .empieza:hover, .contacto-mobile:hover{
@@ -2798,6 +2964,14 @@ html{
     justify-content: space-between;
   }
 
+  .invert-main{
+    overflow: hidden;
+    background: transparent;
+    color: #173552;
+    height: 670px;
+    scroll-margin-top: 79px;
+  }
+
   .main-text{
     width: 100%;
     padding-top: 100px;
@@ -2817,19 +2991,60 @@ html{
     color: #E45C60;
   }
 
+  .invert-text{
+    font-size: 2rem;
+    color:#173552;
+  }
+
   .main-img{
     display: flex;
     justify-content: center;
   }
 
+  .set-img{
+    padding: 1rem;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 500px;
+  }
+
+  .set-img.column-img{
+    flex-direction: column;
+    display: flex;
+  }
+
+  .set-img.column-img2{
+    flex-direction: column;
+    display: flex;
+  }
+
+  .set-img.row-img{
+    display: none;
+  }
+
+  .set-img.mini-img{
+    max-width: 500px;
+  }
+
+  .h2invert{
+    max-width: 800px;
+  }
+
   .phone{
     width: 75%;
-    max-width: 330px;
     position: relative;
-    padding-top: 1rem;
     animation: none;
     flex-grow: 0.8;
     transform: translate(0px, 1px);
+  }
+
+  .phone.pb-5{
+    min-width: 250px;
+    max-width: 250px;
   }
 
   .phone-t{
@@ -2840,11 +3055,18 @@ html{
     display: none;
   }
 
+  .view-mobile{
+    display: block;
+  }
+
+  .view-desktop{
+    display: none;
+  }
+
   .h2main{
     font-size: 1.2rem;
     font-weight: 400;
     text-align: start;
-    color: #FFF;
     line-height: 25px;
   }
 
@@ -2885,6 +3107,10 @@ html{
 
   .h1serv.grey{
     color: #87A4C1;
+  }
+
+  .h1nos.m.gigant{
+    color: #1369C0;
   }
 
   .glassmorphism{
@@ -2929,6 +3155,16 @@ html{
     transform: translate(0, -15px);
   }
 
+  .glassmorphism-invert{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.300), rgb(224, 224, 224, 0.300));
+    margin: auto;
+    padding: 0.8rem;
+    border-radius: 20px;
+    /* min-width: 600px; */
+    width: 85%;
+    margin-top: 0.350rem;
+  }
+
   /* BENEFICIOS */
 
   .shadowing{
@@ -2956,11 +3192,35 @@ html{
     margin-top: 3rem;
   }
 
+  .fit-text{
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
   .h3{
     text-align: center;
     font-size: 1.225rem;
     font-weight: 500;
     line-height: 20px;
+  }
+
+  .h3invert{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #173552;
+    line-height: 15px;
+    padding-inline: 1rem;
+  }
+
+  .h3invert.warning{
+    font-weight: 500;
+    color: #E45C60;
   }
 
   .h3.sky{
@@ -3002,6 +3262,25 @@ html{
     font-weight: 600;
     text-align: center;
     line-height: 25px;
+  }
+
+  .h2invert{
+    font-size: 1.450rem;
+    width: 90%;
+    margin: auto;
+  }
+
+  .h2invertir{
+    color: #173552;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .h2invertir.sky{
+    color: #1369C0;
+    font-size: 1.7rem;
+    line-height: 50px;
   }
 
   .h2.sky{
@@ -3120,6 +3399,25 @@ html{
     display: none;
   }
 
+  .download{
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+  }
+
+  .dld{
+    padding: 0.225rem;
+  }
+
+  .metatrader-section{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
   /* COMO EMPEZAR A INVERTIR */
 
   .glassmorphism-invertir{
@@ -3223,7 +3521,6 @@ html{
   }
 
   .main-img2{
-    margin-bottom: 4rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -3253,8 +3550,11 @@ html{
   }
 
   .h3nos2.red{
-    font-size: 2rem;
-    color: #ED3237;
+    font-size: 3rem;
+    color: #FFF;
+    font-weight: 100;
+    transform: translate(0px, 3px);
+    position: absolute;
   }
 
   .nos-img{
@@ -3478,6 +3778,15 @@ html{
     text-align: justify;
   }
 
+  .p2.fin.pinvert{
+    padding-left: 0;
+    padding-right: 0;
+    color: #878787;
+    font-size: 0.7rem;
+    line-height: 15px;
+    text-align: justify;
+  }
+
   .glassmorphism.bis.tres{
     width: 80vw;
     max-width: 900px;
@@ -3498,10 +3807,18 @@ html{
     font-size: 1.2rem;
   }
 
+  .glassmorphism.bis.cinco{
+    width: 85%;
+    max-width: 900px;
+    margin: auto;
+    padding: 0.75rem;
+    margin-top: 1.5rem;
+  }
+
   .logo2{
     padding: 1rem;
     padding-bottom: 0;
-    min-width: 200px;
+    max-width: 150px;
   }
 
   /* FOOTER */
@@ -3542,7 +3859,6 @@ html{
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    gap: 0.1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
@@ -3561,7 +3877,7 @@ html{
     background: linear-gradient(120deg, var(--c1, #ffffff), var(--c2, #ffffff), var(--c1, #173552)) var(--x, 0)/ 400%;
     background-size: 300% 100%;
     border-radius: 100%;
-    margin: 1rem;
+    margin: 0.250rem;
     font-size: 1.1rem;
     font-weight: 600;
     text-align: center;
@@ -3624,6 +3940,14 @@ html{
   .coins-invsol-des{
     display: none;
   }
+
+  .flexfoot1{
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
 }
 
 /* RESPONSIVE WEB DESIGN */
@@ -3641,6 +3965,14 @@ html{
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
+  }
+
+  .main{
+    height: 700px;
+  }
+
+  .main.invert-main{
+    height: 650px;
   }
 
   .h1main{
@@ -3731,12 +4063,24 @@ html{
 }
 
 @media (min-width: 600px){
+  .glassmorphism-invert{
+    max-width: 600px;
+  }
+
+  .h3invert{
+    max-width: 700px;
+  }
+
   .main-text{
     display: block;
     padding-left: 5%;
     padding-top: 110px;
     max-width: 330px;
     padding-right: 0;
+  }
+
+  .main-text.main-text-invert{
+    padding-left: 0;
   }
 
   .h1main, .h1main.red, .h2main{
@@ -3752,6 +4096,10 @@ html{
     line-height: 40px;
   }
 
+  .h1main.invert-text{
+    min-width: 310px;
+  }
+
   .h2main{
     font-size: 1.5rem;
     line-height: 30px;
@@ -3764,6 +4112,14 @@ html{
     height: 390px;
   }
 
+  .invert-main{
+    overflow: hidden;
+    background: transparent;
+    color: #173552;
+    align-items: center;
+    height: 500px;
+  }
+
   .phone{
     display: none;
   }
@@ -3772,6 +4128,10 @@ html{
     display: flex;
     max-height: 330px;
     align-self: flex-end;
+  }
+
+  .phone-t.invert-t{
+    margin-top: 40px;
   }
 
   .pt-7{
@@ -3926,7 +4286,7 @@ html{
   }
 
   .logo2{
-    max-width: 400px;
+    max-width: 250px;
     margin: auto;
   }
 
@@ -4003,6 +4363,10 @@ html{
   .p-modal{
     font-size: 1.250rem;
   }
+
+  .p2.fin.pinvert{
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 700px){
@@ -4011,6 +4375,10 @@ html{
     flex-flow: row nowrap;
     justify-content: center;
     height: 450px;
+  }
+
+  .invert-main{
+    height: 540px;
   }
 
   .phone-t{
@@ -4053,13 +4421,51 @@ html{
   .glassmorphism.bis.dos{
     min-width: 400px;
   }
+
+  .glassmorphism.bis.cinco{
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 1000px){
+  .button-nav{
+    display: none;
+  }
 }
 
 @media (min-width: 1000px){
+  .view-mobile{
+    display: none;
+  }
+
+  .view-desktop{
+    display: block;
+  }
+
+  .invert-main{
+    padding-top: 80px;
+  }
+
+  .set-img{
+    max-width: 700px;
+  }
+
+  .set-img.column-img{
+    display: none;
+  }
+
+  .set-img.row-img{
+    display: flex;
+  }
+
   .main{
     height: 750px;
     justify-content: center;
     align-items: center;
+  }
+
+  .invert-main{
+    height: 700px;
   }
 
   .phone-t{
@@ -4075,6 +4481,10 @@ html{
     padding-left: 0;
   }
 
+  .main-text.main-text-invert{
+    padding-left: 3rem;
+  }
+
   .phone-d{
     display: flex;
     width: 520px;
@@ -4082,9 +4492,18 @@ html{
     margin-left: 3rem;
   }
 
+  .invert-d{
+    min-width: 550px;
+    margin-left: 0;
+  }
+
   .h1main{
     font-size: 5rem;
     line-height: 60px;
+  }
+
+  .h1main.invert-text{
+    min-width: 430px;
   }
 
   .h2main{
@@ -4092,8 +4511,12 @@ html{
     line-height: 40px;
   }
 
+  .h3invert.warning{
+    font-size: 1.250rem ;
+  }
+
   .contacto{
-    min-width: 150px;
+    min-width: 120px;
   }
 
   .como-img-m{
@@ -4233,22 +4656,37 @@ html{
   .flexfoot{
     display: flex;
     flex-flow: row nowrap;
-    /* justify-content: space-between; */
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    max-width: 600px;
+    margin: auto;
   }
 
-  .flexfoot1, .flexfoot2{
+  .flexfoot1{
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     align-items: center;
-    width: 50%;
+    align-content: center;
+    margin: auto;
   }
+
+  /* .flexfoot1, .flexfoot2{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    } */
 
   iframe{
     width: 400px;
     height: 150px;
+  }
+
+  .simulacion{
+    width: 1000px;
+    height: 750px;
   }
 
   .glassmorphism-invertir.movder{
@@ -4292,11 +4730,55 @@ html{
     max-width: none;
     margin: 0;
   }
+
+  .metatrader-section{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mtr-sec1{
+    margin: 0;
+  }
+
+  .mtr-sec2{
+    width: 60%;
+    max-width: 500px;
+  }
+
+  .h2.h2invert.mtr-text{
+    font-size: 1.750rem;
+    font-weight: 600;
+    line-height: 25px;
+  }
+
+  .h2.h2invert.mtr-text2{
+    font-size: 2rem;
+    min-width: 450px;
+    max-width: 450px;
+  }
+
+  .h2.h2invert.mtr-text3{
+    font-size: 1.4rem;
+    max-width: 300px;
+    line-height: 25px;
+  }
+
+  .glassmorphism-invert.mtr-glass{
+    min-width: 450px;
+    max-width: 450px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.700), rgb(224, 224, 224, 0.700));
+  }
 }
 
 @media (min-width: 1000px) and (max-width: 1400px){
   .phone-d{
     padding-right: 80px;
+  }
+
+  .invert-d{
+    padding-right: 35px;
   }
 
   .main-text{
@@ -4336,6 +4818,14 @@ html{
     margin-left:0 ;
   }
 
+  .invert-d{
+    min-width: 650px;
+  }
+
+  .set-img{
+    max-width: 850px;
+  }
+
   .main-text{
     margin-right: 0;
   }
@@ -4350,6 +4840,11 @@ html{
     line-height: 35px;
   }
 
+  .h2.h2invert{
+    line-height: 45px;
+    font-size: 2.5rem;
+  }
+
   .glassmorphism{
     max-width: 900px;
   }
@@ -4357,6 +4852,10 @@ html{
   .glassmorphism-shadow{
     max-width: 250px;
     min-width: 250px;
+  }
+
+  .glassmorphism-invert{
+    min-width: 750px;
   }
 
   .flexit{
@@ -4601,30 +5100,31 @@ html{
 
 /* ANIMACIONES */
 
-@keyframes show {
-  from {
-    opacity: 0;
-    scale: 25%;
-  }
+/* @keyframes show {
+	from {
+		opacity: 0;
+		scale: 25%;
+	}
 
-  to {
-    opacity: 1;
-    scale: 100%;
-  }
+	to {
+		opacity: 1;
+		scale: 100%;
+	}
 }
 
 img, .glassmorphism, .glassmorphism-color, .glassmorphism-invertir, .glassmorphism-blue, .h1nos, .glassmorphism-nos, .glassmorphism-nosp, .licen-link, .h3seg, .glassmorphism-s{
-  view-timeline-name: --ani;
-  view-timeline-axis: block;
-  animation-timeline: --ani;
-  animation-name: show;
-  animation-range: entry 25% cover 30%;
-  animation-fill-mode: both;
+	view-timeline-name: --ani;
+	view-timeline-axis: block;
+	animation-timeline: --ani;
+	animation-name: show;
+	animation-range: entry 25% cover 30%;
+	animation-fill-mode: both;
+
 }
 
 .lnkdn-w, .wsp-w, .ig-w, .lnkdn, .wsp, .ig, .entes, .entes-c, .logo2, .w-7.mr-3, .glassmorphism.bis.tres{
-  animation: none;
-}
+    animation: none;
+} */
 
 @media (min-width: 640px) {
   .sm\:container {
