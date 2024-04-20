@@ -185,7 +185,7 @@ html{
 }
 
 .empieza.azul{
-    font-size: 1.650rem;
+    font-size: 1rem;
     text-align: center;
     background: linear-gradient(120deg, var(--c1, #1369C0), var(--c2, #00417C) 100%, var(--c1, #00417C)) var(--x, 0)/ 200%;
     color: #ffffff;
@@ -321,6 +321,7 @@ html{
         animation: none;
         flex-grow: 0.8;
         transform: translate(0px, 1px);
+        max-width: 366px;
     }
 
     .phone.pb-5{
@@ -1035,7 +1036,7 @@ html{
 
     .glassmorphism.bis.cuatro{
         width: 60vw;
-        min-width: 300px;
+        min-width: 270px;
         max-width: 600px;
         text-align: center;
         margin: auto;
@@ -1301,6 +1302,10 @@ html{
     }
     .h3invert{
         max-width: 700px;
+    }
+
+    .empieza.azul{
+        font-size: 1.350rem;
     }
 
     .main-text{
@@ -1660,6 +1665,13 @@ html{
 
     .view-mobile{
         display: none;
+    }
+
+    .empieza.azul{
+        font-size: 1.650rem;
+        text-align: center;
+        background: linear-gradient(120deg, var(--c1, #1369C0), var(--c2, #00417C) 100%, var(--c1, #00417C)) var(--x, 0)/ 200%;
+        color: #ffffff;
     }
 
     .view-desktop{
@@ -2313,7 +2325,7 @@ html{
 
 /* ANIMACIONES */
 
-/* @keyframes show {
+@keyframes show {
 	from {
 		opacity: 0;
 		scale: 25%;
@@ -2337,4 +2349,4 @@ img, .glassmorphism, .glassmorphism-color, .glassmorphism-invertir, .glassmorphi
 
 .lnkdn-w, .wsp-w, .ig-w, .lnkdn, .wsp, .ig, .entes, .entes-c, .logo2, .w-7.mr-3, .glassmorphism.bis.tres{
     animation: none;
-} */
+}
