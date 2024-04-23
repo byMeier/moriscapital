@@ -3382,11 +3382,12 @@ html{
     display: none;
   }
 
-  .coins-invsol{
+  .coins-invsol-des{
     position: absolute;
     width: 70px;
-    z-index: 20;
-    margin-top: -12px;
+    z-index: 50;
+    margin-left: -4rem;
+    margin-top: -1rem;
   }
 
   .flex-invsol{
@@ -3954,10 +3955,6 @@ html{
     max-width: 20px;
   }
 
-  .coins-invsol-des{
-    display: none;
-  }
-
   .flexfoot1{
     display: flex;
     flex-flow: column-reverse nowrap;
@@ -4062,8 +4059,10 @@ html{
     min-width: 200px;
   }
 
-  .coins-invsol{
+  .coins-invsol-des{
     width: 80px;
+    margin-top: -2rem;
+    margin-left: -4.5rem;
   }
 }
 
@@ -4361,8 +4360,10 @@ html{
     align-content: center;
   }
 
-  .coins-invsol{
+  .coins-invsol-des{
     width: 100px;
+    margin-top: -1.5rem;
+    margin-left: -5.5rem;
   }
 
   .coins-beneficios1{
@@ -4754,16 +4755,12 @@ html{
     max-width: 800px;
   }
 
-  .coins-invsol{
-    display: none;
-  }
-
   .coins-invsol-des{
     display: block;
     width: 140px;
-    margin-left: -70px;
     z-index: 15;
-    transform: translate(40px, -10px);
+    margin-top: -4.2rem;
+    margin-left: -25rem;
   }
 
   .flex-invsol{
@@ -4938,6 +4935,11 @@ html{
 
   .seguridad-container{
     max-width: 800px;
+  }
+
+  .coins-invsol-des {
+    margin-top: -3.8rem;
+    margin-left: -31rem;
   }
 
   .h1serv.bene{
