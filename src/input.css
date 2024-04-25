@@ -323,6 +323,17 @@ html{
         max-width: 500px;
     }
 
+    .containercoin{
+        display: flex;
+        justify-content: end;
+    }
+    .milioncoin{
+        position: absolute;
+        width: 80px;
+        transform: translate(0px, -20px);
+        z-index: 20;
+    }
+
     .h2invert{
         max-width: 800px;
     }
@@ -439,6 +450,11 @@ html{
         margin: auto;
         max-width: 200px;
         transform: translate(0, -15px);
+    }
+    .glassmorphism-shadow.gsv2{
+        background: none;
+        box-shadow: none;
+        margin-top: -40px;
     }
 
     .glassmorphism-invert{
@@ -618,8 +634,8 @@ html{
     }
 
     .coins-beneficios1{
-        width: 30vw;
-        max-width: 150px;
+        width: 30%;
+        max-width: 125px;
         z-index: 15;
         position: absolute;
         left: 0;
@@ -627,8 +643,8 @@ html{
     }
 
     .coins-beneficios2{
-        width: 30vw;
-        max-width: 150px;
+        width: 30%;
+        max-width: 125px;
         z-index: 15;
         position: absolute;
         right: 0;
@@ -1033,7 +1049,7 @@ html{
         padding-left: 0;
         padding-right: 0;
         color: #878787;
-        font-size: 0.7rem;
+        font-size: 0.875rem;
         line-height: 15px;
         text-align: justify;
     }
@@ -1229,6 +1245,11 @@ html{
         max-width: 220px;
     }
 
+    .milioncoin{
+        width: 95px;
+        margin-right: 2.5%;
+    }
+
     .h1main{
         font-size: 2.5rem;
     }
@@ -1335,6 +1356,12 @@ html{
         max-width: 250px;
     }
 
+    .milioncoin{
+        width: 120px;
+        transform: translate(0, -110px);
+        margin-right: 1%;
+    }
+
     .main-text{
         display: block;
         padding-left: 5%;
@@ -1423,6 +1450,9 @@ html{
         margin: auto;
         margin-top: 2rem;
     }
+    .flexit.nomarg{
+        margin-top: 0;
+    }
 
     .glassmorphism-shadow{
         max-width: 180px;
@@ -1431,6 +1461,11 @@ html{
         align-self: center;
         transform: translate(0px,0);
         margin-left: -10px;
+    }
+    .glassmorphism-shadow.gsv2{
+        margin-left: -30px;
+        margin-top: 0;
+        padding: 0;
     }
 
     .glassmorphism{
@@ -1595,18 +1630,18 @@ html{
 
     .coins-beneficios1-desk{
         display: block;
-        width: 30vw;
+        width: 30%;
         z-index: 15;
         position: absolute;
-        max-width: 180px;
+        max-width: 150px;
         transform: translate(0,50px);
         left: 0;
     }
 
     .coins-beneficios2-desk{
         display: block;
-        width: 30vw;
-        max-width: 180px;
+        width: 30%;
+        max-width: 150px;
         z-index: 15;
         position: absolute;
         transform: translate(0,50px);
@@ -1645,14 +1680,16 @@ html{
 
     .coins-beneficios1-desk{
         left: 5%;
-        max-width: 200px;
+        width: 40%;
+        min-width: 150px;
         position: relative;
         transform: translate(40px, 50px);
     }
 
     .coins-beneficios2-desk{
         right: 5%;
-        max-width: 200px;
+        width: 40%;
+        min-width: 150px;
         position: relative;
         transform: translate(-40px, 48px);
     }
@@ -1677,6 +1714,11 @@ html{
 
     .glassmorphism.bis.cinco{
         max-width: 600px;
+    }
+
+    .containercoin{
+        max-width: 620px;
+        margin: auto;
     }
 
 
@@ -2015,6 +2057,10 @@ html{
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.700), rgb(224, 224, 224, 0.700));
     }
 
+    .coins-beneficios1-desk, .coins-beneficios2-desk{
+        max-width: 250px;
+    }
+
 }
 
 @media (min-width: 1000px) and (max-width: 1400px){
@@ -2207,6 +2253,14 @@ html{
     }
     .coins-beneficios1-desk, .coins-beneficios2-desk{
         max-width: 300px;
+    }
+
+    .containercoin{
+        max-width: 800px;
+    }
+    .milioncoin{
+        width: 150px;
+        transform: translate(0, -135px);
     }
 
 }
