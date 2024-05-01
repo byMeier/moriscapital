@@ -32,7 +32,7 @@ html{
     z-index: 100;
 }
 
-.logo{
+.logo-nav{
     display: flex;
     align-self: flex-start;
     width: 5.5rem;
