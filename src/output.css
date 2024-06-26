@@ -2969,6 +2969,10 @@ html{
 @media (min-width: 0px){
   /* MAIN SECTION */
 
+  .pf.center.wm{
+    font-size: 12px;
+  }
+
   .main{
     display: flex;
     flex-direction: column;
