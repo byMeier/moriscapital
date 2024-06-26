@@ -67,15 +67,15 @@ btnCerrarModal1.addEventListener("click",()=>{
     modal1.close();
 })
 
-//BERNARDO
-btnAbrirModal2.addEventListener("click",()=>{
-    modal2.showModal();
-    modal2.scrollTo(0, 0);
-})
+// //BERNARDO
+// btnAbrirModal2.addEventListener("click",()=>{
+//     modal2.showModal();
+//     modal2.scrollTo(0, 0);
+// })
 
-btnCerrarModal2.addEventListener("click",()=>{
-    modal2.close();
-})
+// btnCerrarModal2.addEventListener("click",()=>{
+//     modal2.close();
+// })
 
 //BRENDA
 btnAbrirModal3.addEventListener("click",()=>{
