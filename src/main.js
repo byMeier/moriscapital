@@ -58,14 +58,14 @@ navButtons.forEach((button) => {
 // MODAL
 
 // VICENTE
-btnAbrirModal1.addEventListener("click",()=>{
-    modal1.showModal();
-    modal1.scrollTo(0, 0);
-})
+// btnAbrirModal1.addEventListener("click",()=>{
+//     modal1.showModal();
+//     modal1.scrollTo(0, 0);
+// })
 
-btnCerrarModal1.addEventListener("click",()=>{
-    modal1.close();
-})
+// btnCerrarModal1.addEventListener("click",()=>{
+//     modal1.close();
+// })
 
 // //BERNARDO
 // btnAbrirModal2.addEventListener("click",()=>{
@@ -78,14 +78,14 @@ btnCerrarModal1.addEventListener("click",()=>{
 // })
 
 //BRENDA
-btnAbrirModal3.addEventListener("click",()=>{
-    modal3.showModal();
-    modal3.scrollTo(0, 0);
-})
+// btnAbrirModal3.addEventListener("click",()=>{
+//     modal3.showModal();
+//     modal3.scrollTo(0, 0);
+// })
 
-btnCerrarModal3.addEventListener("click",()=>{
-    modal3.close();
-})
+// btnCerrarModal3.addEventListener("click",()=>{
+//     modal3.close();
+// })
 
 // ANIMATE ON SCROLL //
 
